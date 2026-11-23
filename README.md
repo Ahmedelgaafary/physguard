@@ -9,11 +9,8 @@ deterministically, so wrong numbers are rejected before they reach a user or a d
 
 ## How it works
 
-```
-question -> LLM (JSON: answer, law, inputs) -> Guard.verify -> PASS / WARN / FAIL
-                    ^                                              |
-                    +---------- feedback + reference value --------+  (repair loop)
-```
+<img width="1039" height="659" alt="Screenshot (205)" src="https://github.com/user-attachments/assets/21b3b841-c0c9-4fc8-a590-5ce0aea6ff87" />
+
 
 Checks, in order: parse -> universal limits (speed of light, absolute zero, negative mass) ->
 user bounds -> expected dimension -> dimensional match with the law -> magnitude vs. the reference
